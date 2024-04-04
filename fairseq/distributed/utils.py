@@ -19,7 +19,7 @@ from typing import Any, Dict, List, Mapping, Optional
 
 import torch
 import torch.distributed as dist
-from fairseq.dataclass.configs import DistributedTrainingConfig, FairseqConfig
+from fairseq_cs.fairseq.dataclass.configs import DistributedTrainingConfig, FairseqConfig
 from omegaconf import open_dict
 
 try:

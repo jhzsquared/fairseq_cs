@@ -10,6 +10,7 @@ import torch
 
 class PositionalEncoding(nn.Module):
     """Positional encoding.
+    # from fairseq
 
     Args:
         d_model: Embedding dimension.

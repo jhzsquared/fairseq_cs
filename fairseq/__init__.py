@@ -17,8 +17,8 @@ except ImportError:
 __all__ = ["pdb"]
 
 # backwards compatibility to support `from fairseq.X import Y`
-from fairseq.distributed import utils as distributed_utils
-from fairseq.logging import meters, metrics, progress_bar  # noqa
+from fairseq_cs.fairseq.distributed import utils as distributed_utils
+from fairseq_cs.fairseq.logging import meters, metrics, progress_bar  # noqa
 
 sys.modules["fairseq.distributed_utils"] = distributed_utils
 sys.modules["fairseq.meters"] = meters
@@ -26,20 +26,20 @@ sys.modules["fairseq.metrics"] = metrics
 sys.modules["fairseq.progress_bar"] = progress_bar
 
 # initialize hydra
-from fairseq.dataclass.initialize import hydra_init
+from fairseq_cs.fairseq.dataclass.initialize import hydra_init
 
 hydra_init()
 
-import fairseq.criterions  # noqa
-import fairseq.distributed  # noqa
-import fairseq.models  # noqa
-import fairseq.modules  # noqa
-import fairseq.optim  # noqa
-import fairseq.optim.lr_scheduler  # noqa
-import fairseq.pdb  # noqa
-import fairseq.scoring  # noqa
-import fairseq.tasks  # noqa
-import fairseq.token_generation_constraints  # noqa
+# import fairseq.criterions  # noqa
+import fairseq_cs.fairseq.distributed  # noqa
+import fairseq_cs.fairseq.models  # noqa
+import fairseq_cs.fairseq.modules  # noqa
+import fairseq_cs.fairseq.optim  # noqa
+import fairseq_cs.fairseq.optim.lr_scheduler  # noqa
+import fairseq_cs.fairseq.pdb  # noqa
+# import fairseq.scoring  # noqa
+import fairseq_cs.fairseq.tasks  # noqa
+import fairseq_cs.fairseq.token_generation_constraints  # noqa
 
-import fairseq.benchmark  # noqa
-import fairseq.model_parallel  # noqa
+import fairseq_cs.fairseq.benchmark  # noqa
+# import fairseq.model_parallel  # noqa
